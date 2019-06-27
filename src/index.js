@@ -5,19 +5,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter} from "react-router-dom"; // React router dom
-import { createStore, applyMiddleware } from 'redux'; // Redux + midlleWare
-import { Provider } from 'react-redux'; // reactRedux 
-import thunk from 'redux-thunk'; // midlleWare
-import allReducers from './reducers'; // Redux 
-
-const store = createStore(allReducers, applyMiddleware(thunk));
 
 ReactDOM.render(
-  <Provider store={store}>
-    <BrowserRouter>
+  <BrowserRouter>
     <App />
-    </BrowserRouter>
-  </Provider>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
