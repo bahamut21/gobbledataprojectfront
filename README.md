@@ -1,5 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Gobble Data Project by Nadia, Sahra, and the Hackson five.
+
+install :
+
+npm install react-router-dom
+npm install --save redux
+npm install react-redux
+npm install --save redux-thunk
+npm install --save redux-form
+npm install --save bootstrap
+npm install --save reactstrap react react-dom
+
 ## Available Scripts
 
 In the project directory, you can run:
