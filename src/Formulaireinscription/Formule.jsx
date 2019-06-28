@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import './Formule.css'
-
-
 class Formule extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            firstname: 'firstname',
+            firstname: 'nom',
             lastname: 'prénom',
             address: 'adresse',
             city: 'ville',
@@ -15,7 +13,6 @@ class Formule extends Component {
             mail: '@',
         }
         this.updatedata = this.updatedata.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
 
     }
 
@@ -29,36 +26,11 @@ class Formule extends Component {
         this.setState({ mail: event.target.mail });
     }
 
-    /*
-      handleSubmit = (event) => {
-        const { name } = this.state;
-        event.preventDefault();
-        const config = {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(this.state),
-        };
-        const url = ${urlApi}/company/;
-        fetch(url, config)
-          .then((res) => {
-            if (res.ok) {
-              NotificationManager.success('', ${name} ajoutée!);
-            } else {
-              NotificationManager.warning('', 'Erreur lors de l\'ajout de l\'entreprise.', 3000);
-            }
-          }).catch(() => {
-            NotificationManager.error('', 'Erreur lors de l\'ajout de l\'entreprise.', 5000);
-          });
-      }
-     */
      
+
     render() {
         return (
-            
-            <form onSubmit={this.handleSubmit}>
-             
+            <div className="form">
                 <div>
                     <input type="firstname" name="firstname" firstname={this.state.firstname} onChange={this.updatedata} placeholder="Ton Nom" />
                 </div>
@@ -80,10 +52,9 @@ class Formule extends Component {
                 <div>
                     <input type="mail" name="mail" mail={this.state.mail} onChange={this.updatedata} placeholder="Ton adresse mail" />
                 </div>
-                <input type="submit" value="Envoyer" />
-                
-            </form>
+                <button type="submit">Envoyer</button>
 
+            </div>
         )
 
     }
