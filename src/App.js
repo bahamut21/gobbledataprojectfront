@@ -1,12 +1,13 @@
 import React from 'react';
-import {Route, Switch} from "react-router-dom"; // React router dom
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
 import Home from './Home'; // React router dom
 import Login from './Login'; // React router dom
 import Result from './Result'; // React router dom
-import Game from './Game'; // React router dom
 import CbShare from './CbShare';
 import Share from './Share';
+import Tips from './Tips';
+import Game from './game/Game'; // React router dom
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path='/share' component={Share} />
         <Route path='/login' component={Login} />
         <Route path='/result' component={Result} />
+        <Route path='/tips' component={Tips} />
       </Switch>
     </div>
   );
