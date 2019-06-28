@@ -9,24 +9,20 @@ import Player from './Formulaireinscription/players';
 import Home from './Home'; // React router dom
 import Login from './Login'; // React router dom
 import Result from './Result'; // React router dom
+import Notifs from './Notifs'; // React router dom
+import Tips from './Tips'; // React router dom
 import CbShare from './CbShare';
 import Share from './Share';
-import Tips from './Tips';
 import Game from './game/Game'; // React router dom
 
 
 
 function App() {
   return (
-
-    <div className="App">      
-      <Title />
-      <Formule />  
-      <Player />
-
     <div className="App">
       <Switch>
         <Route exact path='/' component={Home} />
+        <Route path='/notifs' component={Notifs} />
         <Route path='/game' component={Game} />
         <Route path='/game-cb-share' component={CbShare} />
         <Route path='/share' component={Share} />
