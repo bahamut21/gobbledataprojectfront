@@ -4,8 +4,8 @@ import './App.css';
 import Home from './Home'; // React router dom
 import Login from './Login'; // React router dom
 import Result from './Result'; // React router dom
-import Game from './Game'; // React router dom
 import Tips from './Tips';
+import Game from './game/Game'; // React router dom
 
 
 function App() {
