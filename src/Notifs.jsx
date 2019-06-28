@@ -10,22 +10,22 @@ class Game extends Component {
 
   thomasNotification = (type) => {
     return () => {
-          NotificationManager.info('Quel est ce jeu que tu m\'as envoyé ??? Mon PC a foiré maintenant !!', 'Thomas', 100000);
+          NotificationManager.info('Quel est ce jeu que tu m\'as envoyé ??? Mon PC a foiré maintenant !!', 'Thomas', 5000);
     };
   };
   nathalieNotification = (type) => {
     return () => {
-          NotificationManager.info('Notre compte joint - VRAIMENT !! Ce sera la dernière fois que vous entendrez parler de moi !!!', 'Nathalie', 100000);
+          NotificationManager.info('Notre compte joint - VRAIMENT !! Ce sera la dernière fois que vous entendrez parler de moi !!!', 'Nathalie', 5000);
     };
   };
   jeromeNotification = (type) => {
     return () => {
-          NotificationManager.info('Nous ne tolérons pas ce type de comportement dans notre entreprise.', 'Jerome (Chef)', 100000);
+          NotificationManager.info('Nous ne tolérons pas ce type de comportement dans notre entreprise.', 'Jerome (Chef)', 5000);
     };
   };
   mamanNotification = (type) => {
     return () => {
-          NotificationManager.info('Ce jeu a l\'air vraiment génial - Merci !!', 'Maman', 100000);
+          NotificationManager.info('Ce jeu a l\'air vraiment génial - Merci !!', 'Maman', 5000);
     };
   };
 

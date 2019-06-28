@@ -4,7 +4,7 @@ import './App.css';
 import Home from './Home'; // React router dom
 import Login from './Login'; // React router dom
 import Result from './Result'; // React router dom
-import Game from './Game'; // React router dom
+import Notifs from './Notifs'; // React router dom
 import Tips from './Tips'; // React router dom
 
 
@@ -13,10 +13,10 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route path='/game' component={Game} />
+        <Route path='/notifs' component={Notifs} />
         <Route path='/login' component={Login} />
         <Route path='/result' component={Result} />
-        <Route path='/teps' component={Tips} />
+        <Route path='/tips' component={Tips} />
       </Switch>
     </div>
   );
