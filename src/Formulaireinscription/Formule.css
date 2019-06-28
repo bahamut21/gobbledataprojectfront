@@ -13,14 +13,14 @@
     font-size: 90%;
     text-align: center;
     font-family: Chalkduster;
-
+    color: rgb(13, 250, 171);
 }
 
 .form button{
 
         text-align: center;
-        color:red;
-        box-shadow: 23px 32px 34px;
+        color:blue;
+        box-shadow: 5px 7px 37px 5px;
         margin-top:4%;
         height:35px;
         width:34%;
