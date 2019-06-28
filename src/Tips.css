@@ -1,0 +1,17 @@
+.Tips {
+  margin: 0;
+}
+
+.Tips .odd {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.Tips .even {
+  padding-top: 5%;
+  background-color: rgb(219, 213, 213);
+}
+
+.Tips .icon img {
+  width: 80px;
+}
