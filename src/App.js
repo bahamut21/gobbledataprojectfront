@@ -1,14 +1,23 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
-import Formule from './Formulaireinscription/Formule'; // React router dom
-import Title from './Formulaireinscription/Title'
+import Home from './Home'; // React router dom
+import Login from './Login'; // React router dom
+import Result from './Result'; // React router dom
+import Game from './Game'; // React router dom
+import Tips from './Tips';
 
 
 function App() {
   return (
-    <div className="App">      
-      <Title />
-      <Formule />   
+    <div className="App">
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route path='/game' component={Game} />
+        <Route path='/login' component={Login} />
+        <Route path='/result' component={Result} />
+        <Route path='/tips' component={Tips} />
+      </Switch>
     </div>
   );
 }

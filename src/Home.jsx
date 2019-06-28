@@ -23,8 +23,8 @@ class Home extends Component {
   render() {
     return (
       <div className="Home">
-        <img className="arrow" src={arrow} />
-        <img className="bg-image" src={backgroundImage} />
+        <img className="arrow" src={arrow} alt='Array[k]' />
+        <img className="bg-image" src={backgroundImage} alt='Array[k]'/>
         <div className="Mobile" onClick={this.toggle}>{this.props.buttonLabel}</div>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}>Mail</ModalHeader>
