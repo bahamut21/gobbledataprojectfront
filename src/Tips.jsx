@@ -9,7 +9,7 @@ class Tips extends Component {
   render() {
     return (
       <div className="Tips">
-        <div class="row container odd">
+        <div className="row container odd">
           <img className="col-4 icon" src='/assets/icons/warning.png' alt='warning' />
           <h5 className="col-8"> Vérifier les emails avec prudence </h5>
           <h6 className="col-12">Les phishers sont extrêmement doués pour ce qu'ils font. Ce n’est pas parce qu’un courrier électronique contient des
@@ -17,7 +17,7 @@ class Tips extends Component {
           quand il s’agit de vos messages électroniques: s’ils semblent lointains, ne les ouvrez pas.</h6>
         </div>
 
-        <div class="row container even">
+        <div className="row container even">
           <img className="col-4 icon" src='/assets/icons/links.png' alt='links' />
           <h5 className="col-8">Liens: Regarde mais ne clique pas</h5>
           <h6 className="col-12">Passez votre souris sur les liens incorporés dans le corps de l'e-mail. Si l'adresse du lien semble étrange,
@@ -25,7 +25,7 @@ class Tips extends Component {
           site Web plutôt que de cliquer sur le lien dans la liste des courriels non sollicités.</h6>
         </div>
 
-        <div class="row container odd">
+        <div className="row container odd">
           <img className="col-4 icon" src='/assets/icons/update.png' alt='update' />
           <h5 className="col-8"> Gardez votre logiciel à jour </h5>
           <h6 className="col-12">Ces mises à jour logicielles et OS compliquées sont non seulement importantes du point de vue de la fonctionnalité,
@@ -34,7 +34,7 @@ class Tips extends Component {
           la sécurité entendront encore et encore.</h6>
         </div>
 
-        <div class="row container even">
+        <div className="row container even">
           <img className="col-4 icon" src='/assets/icons/payment.png' alt='payment' />
           <h5 className="col-8"> Quand on vous demande de payer</h5>
           <h6 className="col-12">C'est un gros code rouge. C’est très souvent pour une très petite quantité, ce qui donne l’impression que ce n’est
