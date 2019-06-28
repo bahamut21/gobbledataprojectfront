@@ -35,7 +35,7 @@ class Home extends Component {
               Tu connais ce nouveau jeu ? <br/>
               Il fait gagner des millions d'euros avec des compétitions en ligne! <br/>
               Clique sur ce lien !! 
-              <Link to="/game">http:/teektuctoo/array[k]/man/lostinspace.uh</Link>
+              <Link to="/Formule">http:/teektuctoo/array[k]/man/lostinspace.uh</Link>
 
             </p>
           </ModalBody>

@@ -19,13 +19,6 @@ import Game from './game/Game'; // React router dom
 
 function App() {
   return (
-<<<<<<< HEAD
-
-          
-    
-
-=======
->>>>>>> dc1025e8fc27ac75794ff54fbb267ebbe63f6ec1
     <div className="App">
       <Switch>
         <Route exact path='/' component={Home} />
