@@ -30,7 +30,9 @@ class Formule extends Component {
 
     render() {
         return (
+
             <div className="form">
+
                 <div>
                     <input type="firstname" name="firstname" firstname={this.state.firstname} onChange={this.updatedata} placeholder="Ton Nom" />
                 </div>
