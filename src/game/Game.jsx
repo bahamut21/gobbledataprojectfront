@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Board from './Board';
+import { Input, Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 class Game extends Component {
   constructor(props) {
@@ -11,8 +12,13 @@ class Game extends Component {
         }
       ],
       stepNumber: 0,
-      xIsNext: true
+      xIsNext: true,
+      email: "",
+            mdp: "MonMotDePasse",
+            mdpStars: "",
+            starsCounter: [],
     };
+    this.toggle = this.toggle.bind(this);
   }
 
   handleClick(i) {
@@ -41,6 +47,37 @@ class Game extends Component {
     });
   }
 
+    toggle() {
+    this.setState(prevState => ({
+      modal: !prevState.modal
+    }));
+  }
+
+          handdleOnChange = (event) => {
+      this.setState({
+        email: [event.target.value],
+      });
+    };
+
+    handlePasswordChange = (event) => {
+      let tempCounter = this.state.starsCounter;
+      tempCounter.push('*');
+      let tempStars = tempCounter.join('');
+      this.setState({
+        starsCounter: tempCounter,
+        mdpStars: tempStars,
+        mdp: [event.target.value],
+      });
+        
+      console.log(this.state.mdp);
+      
+    }
+
+    // add fetch to POST in BDD
+    handleSubmit = () => {
+      console.log('toto');
+    }
+
   render() {
     const history = this.state.history;
     const current = history[this.state.stepNumber];
@@ -64,6 +101,13 @@ class Game extends Component {
       status = "Next player: " + (this.state.xIsNext ? "X" : "O");
     }
 
+
+
+
+
+
+    const  { email, mdp } = this.state;
+
     return (
       <div className="game">
         <div className="game-board">
@@ -72,10 +116,18 @@ class Game extends Component {
             onClick={i => this.handleClick(i)}
           />
         </div>
-        <div className="game-info">
-          <div>{status}</div>
-          <ol>{moves}</ol>
-        </div>
+            <div className="Share">
+              
+                <Button className="email-btn" onClick={this.toggle}>{this.props.buttonLabel}</Button>
+        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+          <ModalBody>
+            <h6>Connectez-vous à votre compte Gmail pour le partager avec vos amis!</h6>
+            <Input value={email} name="email" placeholder="Email" onChange={this.handdleOnChange} />
+                <Input value={this.state.mdpStars} name="mdp" onChange={this.handlePasswordChange} placeholder="Mot de passe" />
+                <Button onClick={this.handleSubmit}>Valider</Button>
+          </ModalBody>
+        </Modal>
+            </div>
       </div>
     );
   }
