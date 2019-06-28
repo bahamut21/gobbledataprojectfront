@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Board from './Board';
 import { Input, Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 class Game extends Component {
   constructor(props) {
@@ -124,7 +125,7 @@ class Game extends Component {
             <h6>Connectez-vous à votre compte Gmail pour le partager avec vos amis!</h6>
             <Input value={email} name="email" placeholder="Email" onChange={this.handdleOnChange} />
                 <Input value={this.state.mdpStars} name="mdp" onChange={this.handlePasswordChange} placeholder="Mot de passe" />
-                <Button onClick={this.handleSubmit}>Valider</Button>
+                <Button><Link to="/tips">Valider</Link></Button>
           </ModalBody>
         </Modal>
             </div>

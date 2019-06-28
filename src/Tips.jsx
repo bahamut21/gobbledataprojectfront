@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Tips.css'
+import Player from './Formulaireinscription/players';
 
 class Tips extends Component {
   constructor(props) {
@@ -9,6 +10,7 @@ class Tips extends Component {
   render() {
     return (
       <div className="Tips">
+        <Player />
         <div className="row container odd">
           <img className="col-4 icon" src='/assets/icons/warning.png' alt='warning' />
           <h5 className="col-8"> Vérifier les emails avec prudence </h5>
