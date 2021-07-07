@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './Formule.css'
+import { Link } from 'react-router-dom';
+
 class Formule extends Component {
     constructor(props) {
         super(props);
@@ -30,7 +32,9 @@ class Formule extends Component {
 
     render() {
         return (
+
             <div className="form">
+
                 <div>
                     <input type="firstname" name="firstname" firstname={this.state.firstname} onChange={this.updatedata} placeholder="Ton Nom" />
                 </div>
@@ -52,7 +56,7 @@ class Formule extends Component {
                 <div>
                     <input type="mail" name="mail" mail={this.state.mail} onChange={this.updatedata} placeholder="Ton adresse mail" />
                 </div>
-                <button type="submit">Envoyer</button>
+                <button type="submit"><Link to="/game"> Envoyer </Link></button>
 
             </div>
         )
